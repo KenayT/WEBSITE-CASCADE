@@ -1,0 +1,228 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 0;
+    border-bottom: 2px solid #ca8f42;
+    position: relative;
+    z-index: 1000;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* TITLE FOR THE LOGO */
+.cascade {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #d2a166;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #ca8f42;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+/* MIDDLE TEXT */
+.content h1 {
+    font-size: 90px;
+    margin-top: 150px;
+    color: #dfd3b3;
+    font-family: "Agdasima", sans-serif;
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+
+/* TITLE LOGO POSITION */
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cascade {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.navbar {
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 1px 0;
+    z-index: 1000;
+    color: #a37011;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.background img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.logo-title a {
+    text-decoration: none;
+    color: #ca8f42;
+}
+
+
+/* TEXT LEFT */
+
+.left-text-container {
+    background-color: #ffffffaf;
+    border-radius: 20px;
+    padding: 30px;
+    width: 40%;
+    height: 40%;
+    float: left;
+    margin: 40px;
+    box-shadow: 0 0 0 10px #885b31;
+}
+
+.left-text-container p {
+    text-align: justify;
+    color: #000000;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
+}
+
+/* RIGHT SIDE TEXT */
+.right-text-container {
+    background-color: #ffffffaf;
+    border-radius: 20px;
+    padding: 30px;
+    width: 40%;
+    float: right;
+    margin: 40px;
+    box-shadow: 0 0 0 10px #885b31;
+    bottom: 50%;
+}
+
+.right-text-container p {
+    text-align: justify;
+    color: #000000;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
+}
+
+.right-text-container h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5c4a20;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 24px;
+}
